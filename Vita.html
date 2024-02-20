@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illud Vita - Initiation</title>
+    <style>
+        body {
+            background: url('https://i.imgur.com/rtek2b6.jpg') no-repeat center center fixed;
+            background-size: contain;
+            background-color: black; /* Set background color to black */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #66c2ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .puzzle-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid #66c2ff;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .hidden-message {
+            display: none;
+            color: #ff6666;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var hiddenMessageContainer = document.querySelector('.hidden-message');
+            hiddenMessageContainer.textContent = 'a83_b136_e';
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Welcome, Life Seeker</h1>
+    <p>Congratulations on discovering us. We are Illud Vita.</p>
+    <p>We wish to test the masses.</p>
+    <p>Your initiation begins now.</p>
+
+    <div class="puzzle-container">
+        <p>Do you want to solve the puzzle?</p>
+    </div>
+
+    <div class="hidden-message"></div>
+
+</body>
+</html>
