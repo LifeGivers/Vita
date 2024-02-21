@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memento Mori - Remember To Die</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #ff4d4d;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .verification-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ff4d4d;
+            padding: 20px;
+            margin-top: 30px;
+            display: block;
+        }
+
+        .main-container {
+            display: none;
+        }
+
+        .memento-image {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 30px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #ff4d4d;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #ff4d4d;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+    </style>
+    <script>
+        function validateEmail() {
+            var email = document.getElementById('email').value;
+
+            // Check if the email is valid using a regular expression
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            // Hide the verification container and show the main content
+            document.getElementById('verification-container').style.display = 'none';
+            document.getElementById('main-container').style.display = 'block';
+
+            // Continue with the rest of your validation logic
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>All things shall Come to an end</h1>
+    <p>even the Living</p>
+    <p>even you</p>
+
+    <div id="verification-container" class="verification-container">
+        <p>Please enter any email</p>
+        <label for="email">Enter an email:</label>
+        <input type="email" id="email" required>
+        <button class="button" onclick="validateEmail()">Unlock</button>
+    </div>
+
+    <div id="main-container" class="main-container">
+        <div class="puzzle-container">
+            <p>Do you wish to die?</p>
+        </div>
+
+        <div class="button-container">
+            <a class="button" href="answeryes.html" target="_blank">Yes</a>
+            <a class="button" href="https://example.com/no-site" target="_blank">No</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
